@@ -1,26 +1,3 @@
-let sidebarOpen = false;
-const sidebar = document.querySelector('#sidebar');
-const menu = document.querySelector(".menu-icon")
-
-menu.addEventListener("onclick", (event) => {
-    openSidebar
-})
-
-function openSidebar() {
-  if (!sidebarOpen) {
-    sidebar.classList.add('sidebar-responsive');
-    sidebarOpen = true;
-  }
-}
-
-function closeSidebar() {
-  if (sidebarOpen) {
-    sidebar.classList.remove('sidebar-responsive');
-    sidebarOpen = false;
-  }
-}
-
-
 const barChartOptions = {
   series: [
     {
